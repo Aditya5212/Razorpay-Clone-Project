@@ -21,10 +21,17 @@
         border: rgb(73, 73, 253);
       }
 
-      .ctaSection{
-        background-size: 100% 100%;
-        padding-top: 7rem;
+      .ctaSection {
+        padding-top: 8rem;
         padding-bottom: 8rem;
+        }
+
+      @media (min-width: 1024px) {
+      .ctaSection {
+        background-size: 100% 100%;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        }
       }
 
       .corefeatureSection{
@@ -50,80 +57,59 @@
     </style>
 </head>
 <body class="overflow-x-hidden">
-    <nav class="bg-deepBlue ">
-        <div class="relative w-[1080px] mx-auto flex items-center space-x-6 ">
+  <div class="overflow-x-hidden relative w-full">
+    <nav class="bg-deepBlue">
+      <div class="relative w-10/12 md:w-11/12 max-w-[1080px] mx-auto flex items-center justify-between">
+        <!-- logo -->
+        <a href="/" class="cursor-pointer py-7 pr-7 block">
+          <img src="./images/logo-razor.svg" width="125px" height="30px" loading="lazy">
+        </a>
 
-            <!-- logo -->
-            <a href="/" class="lg:visible cursor-pointer py-7 pr-7 space-x-6">
-                <img
-                src="./images/logo-razor.svg"
-                width="125px"
-                height="30px"/>
-            </a>
+        <!-- links -->
+        <ul class="items-stretch space-x-6 pr-7 hidden lg:flex">
+          <li class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer">
+            <a href="#">Payments</a>
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200"></div>
+          </li>
+          <li class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer">
+            <a href="#">Banking</a>
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200"></div>
+          </li>
+          <li class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 cursor-pointer">
+            <a href="#">Corporate Card</a>
+          </li>
+          <li class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 cursor-pointer">
+            <a href="#">Payroll</a>
+          </li>
+          <li class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer">
+            <a href="#">Resources</a>
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200"></div>
+          </li>
+          <li class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer">
+            <a href="#">Support</a>
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200"></div>
+          </li>
+          <li class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer">
+            <a href="#">Pricing</a>
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200"></div>
+          </li>
+        </ul>
 
-            <!-- Nav elements -->
-            <div class=" space-x-4 lg:flex hidden items-center">
-
-                <div class="relative text-white py-7 font-mullish cursor-pointer hover:text-lightBlue transition-all duration-300 group" >
-                    <a href="#">Payments</a>
-                    <div class="absolute rounded-sm bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-300"></div>
-                </div>
-
-                <div class="relative text-white py-7 font-mullish cursor-pointer hover:text-lightBlue transition-all duration-300 group" >
-                    <a href="#">Banking</a>
-                    <div class="absolute rounded-sm bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-300"></div>
-                </div>
-
-                <div class="relative text-white py-7 font-mullish cursor-pointer hover:text-lightBlue transition-all duration-300 group" >
-                    <a href="#">Corporate Card</a>
-                    <div class="absolute rounded-sm bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-300"></div>
-                </div>
-
-                <div class="relative text-white py-7 font-mullish cursor-pointer hover:text-lightBlue transition-all duration-300 group" >
-                    <a href="#">Payroll</a>
-                    <div class="absolute rounded-sm bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-300"></div>
-                </div>
-
-                <div class="relative text-white py-7 font-mullish cursor-pointer hover:text-lightBlue transition-all duration-300 group" >
-                    <a href="#">Resources</a>
-                    <div class="absolute rounded-sm bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-300"></div>
-                </div>
-
-                <div class="relative text-white py-7 font-mullish cursor-pointer hover:text-lightBlue transition-all duration-300 group" >
-                    <a href="#">Support</a>
-                    <div class="absolute rounded-sm bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-300"></div>
-                </div>
-
-                <div class="relative text-white py-7 font-mullish cursor-pointer hover:text-lightBlue transition-all duration-300 group" >
-                    <a href="#">Pricing</a>
-                    <div class="absolute rounded-sm bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-300"></div>
-                </div>
-
-
-            </div>
-
-            <div class="lg:flex hidden gap-4">
-                <img src="./images/india-flag.svg" alt="india-flag" width="28px" height="20px     ">
-
-                <button class="text-white py-3 px-5 font-mullish border border-lightBlue rounded-sm text-sm font-bold">
-                    Log in
-                </button>
-
-                <button class=" py-3 px-4 font-sans rounded-sm text-sm font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500 hidden lg:flex">
-                    Sign Up 
-                    <svg
-                viewBox="0 0 24 24"
-                focusable="false"
-                class="w-[14px] h-[14px] ml-3 self-center"
-              >
-                <path
-                  fill="currentColor"
-                  d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                ></path>
-              </svg></button>
-
-            </div>
+        <!-- buttons -->
+        <div class="flex items-center space-x-3">
+          <img src="./images/india-flag.svg" loading="lazy" width="28px" height="20px" class="mt-1 hidden lg:block">
+          <button class="py-3 px-5 font-mullish text-sm font-bold text-white border border-lightBlue rounded-sm">
+            Log in
+          </button>
+          <button class="py-3 px-4 min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border rounded-sm hidden lg:flex items-center hover:text-lightBlue500 transition-all duration-200">
+            Sign Up
+            <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-3">
+              <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+            </svg>
+          </button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu text-white text-xs cursor-pointer lg:hidden"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </div>
+      </div>
     </nav>
 
     <!-- Hero section -->
@@ -157,23 +143,23 @@
         <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" 
         width="233"
         height="167"
-        class="absolute -top-[8rem] left-[10rem] inline-block -z-10">
+        class="absolute -top-[8rem] left-[10rem] md:inline-block hidden -z-10">
   
         <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy"
         width="233"
         height="167"
-        class="absolute top-[3rem] right-0 inline-block rotate-180">
+        class="absolute top-[3rem] right-0 md:inline-block rotate-180 hidden">
 
         <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4 ">
             <h2 class="font-mullish font-extrabold text-center text-2xl leading-[1.2]">Accept Payments with Razorpay Payment Suite</h2>
             <div class="w-6 h-1 bg-lightBlue300 mx-auto mt-4 mb-20"></div>
 
 
-            <div class="relative w-full min-h-[520px] bg-white flex rounded-md p-10 py-12 border">
+            <div class="relative w-full min-h-[520px] bg-white flex flex-col lg:flex-row rounded-md p-10 py-12 border">
                 <!-- left section -->
-                <div class="flex flex-col justify-between">
+                <div class="flex flex-col space-y-6 md:justify-between ">
                     
-                    <h1 class="w-[500px] text-3xl font-bold font-mullish leading-14 text-wrap ">Supercharge your business with the all-powerful 
+                    <h1 class=" md:w-[500px] w-[200px] text-xl md:text-3xl  font-bold font-mullish leading-14 text-wrap ">Supercharge your business with the all-powerful 
                         <span class="text-lightBlue">Payment Gateway</span></h1>
 
                     <div class="mt-12 flex flex-col justify-between space-y-2">
@@ -211,9 +197,19 @@
                             
                         </div>
                     </div>
-                    <div class="mt-12 flex items-center gap-8">
-                        <button class=" bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 py-[14px] px-[18px]">
+                    <div class="mt-12 flex md:flex-row flex-col-reverse items-start md:items-center justify-start gap-4 md:gap-8">
+                        <button class=" w-full md:w-fit flex items-center justify-center bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 py-[14px] px-[18px]">
                             Sign Up Now
+                            <svg
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            class="w-[14px] h-[14px] ml-3"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                    ></path>
+                  </svg>
                         </button>
                         <div>
                             <a class="font-bold font-mullish text-lightBlue" href="/">Know More >
@@ -221,7 +217,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="absolute w-full max-w-[600px] top-0 right-0">
+                <div class="absolute w-full max-w-[600px] bottom-0 right-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
                     <img src="./images/payment-suite.png" alt="">
                 </div>
                 
@@ -231,7 +227,7 @@
 
      <!-- payment link -->
       <section class="bg-white relative mx-auto  w-11/12 max-w-[1080px] pt-4 pb-8">
-        <div class="grid lg:grid-cols-3 lg:grid-rows-2 grid-cols-1 grid-rows-6 gap-4">
+        <div class="grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3 grid-cols-1 grid-rows-6 gap-4">
             
             <!-- Box-1 -->
             <div class="w-full min-h-[15rem] relative cursor-pointer hover:shadow-lg transition-all duration-200 border border-gray-100 rounded-sm">
@@ -356,7 +352,7 @@
       <!-- feature section -->
 
       <section class="bg-[url(./images/feature-section-2BG.svg)] 
-       bg-no-repeat bg-cover pt-[16rem] pb-[500px] mt-14 overflow-hidden">
+       bg-no-repeat bg-cover pt-[8rem] md:pt-[16rem] pb-[250px] md:pb-[500px] mt-14 overflow-hidden ">
         
         <div class=" w-10/12 max-w-[1080px] mx-auto pt-4">
             <h2 class=" font-mullish font-bold text-center text-white text-2xl leading-[1.2]">Explore Razorpay Business Banking</h2>
@@ -379,7 +375,7 @@
                             <span class="text-greenLight">Business Banking</span>
                         </h1>
     
-                        <ul class="flex flex-col space-y-2">
+                        <ul class="flex flex-col space-y-2 max-w-[450px]">
                             <li class="flex">
                                 <svg class="w-[20px] h-[20px] self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
                                 <p class="font-mullish ml-2 text-white">Open a fully digital current account</p>
@@ -398,8 +394,8 @@
                             </li>
                         </ul>
     
-                        <div class="flex gap-6 items-center w-full space-x-4 ">
-                            <button class="relative w-fit flex justify-start items-center
+                        <div class="flex flex-col-reverse md:flex-row gap-6 items-start md:items-center  w-full gap-y-2 md:space-x-4 ">
+                            <button class="relative w-full md:w-fit flex justify-start items-center
                             text-center bg-lightBlue py-[14px] px-[18px] md:pr-[90px] 
                             rounded-md text-white font-bold font-mullish
                             transition-all duration-200 hover:bg-lightBlue500">
@@ -418,7 +414,7 @@
                     </div>
                     <!-- Background image -->
                      <img src="./images/buisness-banking.png" alt=""
-                     class="absolute top-0 right-0" loading="lazy">
+                     class="absolute bottom-0 right-0  hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block  " loading="lazy">
                 </div>
             </div>
 
@@ -628,12 +624,12 @@
 
 
 
-      <section class="bg-white relative">
+      <section class=" relative">
         <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
           <img src="./images/feature-section1-dottedrows.png" alt=""
-          class="absolute w-[233px] left-[300px] -top-[6rem] z-10">
+          class="absolute w-[233px] left-[300px] -top-[6rem] -z-10">
           <img src="./images/feature-section1-dottedrows.png" alt=""
-          class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10" >
+          class="absolute w-[233px] -right-[3.5rem] -top-[6rem] -z-10" >
 
           <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
               <!--item 1-->
@@ -737,19 +733,19 @@
 
       <!-- Core Feature Section -->
        <section class=" bg-[url(./images/core-features-sectionBg.svg)] bg-cover 
-       mt-6 md:mt-14 relative overflow-hidden corefeatureSection ">
+       mt-6 md:mt-14 relative overflow-hidden  pb-[20rem] pt-[32rem] md:pt-[20rem]">
         <!--  .z-[1000] -->
         <div class="w-10/12 max-w-[1080px] mx-auto ">
           <div class=" flex flex-col justify-center items-center space-y-4">
             <h1 class="font-mullish text-white text-2xl leading-[1.5] font-bold"
-          >Features</h1>
+            >Features</h1>
 
-          <div class="w-6 h-1 bg-greenLight"></div>
+            <div class="w-6 h-1 bg-greenLight"></div>
 
-          <P class="mx-auto max-w-[450px] text-center text-white font-mullish text-base tracking-wide"
-          >Empower your business with all the right tools to accept online payments and provide the best customer experience</P>
+            <P class="mx-auto max-w-[450px] text-center text-white font-mullish text-base tracking-wide"
+            >Empower your business with all the right tools to accept online payments and provide the best customer experience</P>
 
-          <div class="grid grid-cols-4 grid-rows-2 gap-8 pt-4">
+          <div class="grid grid-cols-1 grid-rows-8 md:grid-cols-2 md:grid-rows-4 lg:grid-cols-4 lg:grid-rows-2 gap-8 pt-4">
             <!-- Feature-Card-1 -->
             <div class="flex flex-col space-y-4 p-2">
               <img 
@@ -860,11 +856,11 @@
        </section>
 
        <!-- Join Razorpay Section -->
-        <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
+        <section class="bg-[#f5f8fe] relative pt-20 md:pt-40 pb-12 -mt-[270px] md:-mt-[200px] -z-[100]">
           <div class="relative w-11/12 max-w-[1080px] mx-auto P-4
-          flex space-y-4 ">
+          flex flex-col items-center md:flex-row  space-y-4 ">
             <!-- left part -->
-            <div class="relative flex flex-col justify-center max-w-[calc(100%-500px)]">
+            <div class="relative flex flex-col justify-center md:max-w-[calc(100%-500px)]">
 
               <h2 class="font-mullish font-bold text-deepBluedark text-2xl"
               >Join the 50,00,000+ businesses using Razorpay</h2>
@@ -884,7 +880,7 @@
 
             <!-- Right part -->
 
-            <div class="h-[500px] w-[500px]  relative overflow-y-hidden">
+            <div class="md:h-[500px] md:w-[500px] h-[400px] w-[400px]  relative overflow-y-hidden  ">
               <div style="background: linear-gradient(180deg,#f4f8fe,#fff0);"
               class="absolute w-full h-[150px] top-0 z-50"></div>
 
@@ -931,28 +927,32 @@
 
              <!-- main content -->
 
-            <div class="flex max-w-[960px]  mx-auto items-center">
+            <div class="flex flex-col space-y-8 lg:flex-row max-w-[960px]  mx-auto items-center">
               <!-- left image -->
               <img src="./images/testimonial.jpg" alt=""
               class="w-[320px] h-[320px] object-cover rounded-xl">
               <!-- right part -->
-              <div class="max-w-[400px] mr-20 ml-40">
-                <img src="./images/quotes.svg" alt=""
-                class="w-[35px] h-[35px]">
-                <h3 class="font-mullish text-3xl font-extralight opacity-90"
-                >Readymade Closed Wallet Solution For Quick Refunds</h3>
-                <a href="" ><span class="italic underline font-mullish text-xs">Learn More</span></a>
-                <h2
-                class="font-mullish text-2xl font-extrabold">Lorem Ipsum</h2>
-                <p class="font-mullish font-medium">CEO, XYZ Engineering Company</p>
-                <img src="./images/fake-company-logo.png" alt=""
-                class="w-[80px] h-[45px]">
+              <div class="flex flex-col-reverse max-w-[400px] mr-20 ml-40">
+                <div>
+                  <img src="./images/quotes.svg" alt=""
+                  class="w-[35px] h-[35px]">
+                  <h3 class="font-mullish text-3xl font-extralight opacity-90"
+                  >Readymade Closed Wallet Solution For Quick Refunds</h3>
+                  <a href="" ><span class="italic underline font-mullish text-xs">Learn More</span></a>
+                </div>
+                <div>
+                  <h2 class="font-mullish text-2xl font-extrabold">Lorem Ipsum</h2>
+                  <p class="font-mullish font-medium">CEO, XYZ Engineering Company</p>
+                  <img src="./images/fake-company-logo.png" alt=""
+                  class="w-[80px] h-[45px]">
+                </div>
+                
               </div>
             </div>
             
             <!-- 6 dot div -->
 
-            <div class="justify-center flex mt-20 gap-2 items-center">
+            <div class="justify-center flex mt-20 gap-2 items-center hidden md:block">
               <div class="h-[10px] w-[10px] bg-slate-300 rounded-full"></div>
               <div class="h-[10px] w-[10px] bg-lightBlue rounded-full"></div>
               <div class="h-[10px] w-[10px] bg-slate-300 rounded-full"></div>
@@ -967,18 +967,18 @@
         </section>
 
 
-        <section class="relative  bg-[url(./images/CTABg.svg)] w-full h-full bg-cover bg-no-repeat ctaSection bg-">
-          <div class="w-11/12 max-w-[1080px] mx-auto flex flex-row items-center justify-between">
+        <section class="mt-28 mb-8 relative  bg-[url(./images/CTABg.svg)] w-full h-full bg-cover bg-no-repeat ctaSection min-h-[510px]">
+          <div class="w-11/12 max-w-[1080px] mx-auto lg:flex items-center justify-between ">
 
             <!-- Left side part -->
-            <div class="flex flex-col space-y-4 items-start">
+            <div class="flex flex-col space-y-4 items-start ">
               <h2 class="font-mullish text-white text-2xl font-extrabold">
               Supercharge your business with Razorpay</h2>
               <div class="w-6 h-1 bg-greenLight"></div>
               <p class="font-mullish text-white max-w-[440px]"
               >Sign up now to experience the future of payments and offer your customers the best checkout experience.
               </p>
-              <ul class="flex gap-x-12 max-w-[700px] flex-wrap leading-[2.4] m-4">
+              <ul class="flex gap-x-12 lg:max-w-[700px] flex-wrap leading-[2.4] m-4">
                 <li class="flex space-x-2">
                   <svg class="w-[20px] h-[20px] self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
                   <p class="font-mullish text-white ">Quick Onboarding</p>
@@ -1013,7 +1013,7 @@
             </div>
 
             <!-- Right side image -->
-            <img class=""
+            <img class="hidden lg:block"
              src="./images/ctaImg.svg" alt=""
              width="250px">
           </div>
@@ -1022,8 +1022,8 @@
         <!-- footer section -->
          <footer style="background: linear-gradient(to right, #eef9fe, #edf7ff)"
          class="-mt-[400px] md:-mt-[300px] pb-[100px] ">
-          <div class="pt-[360px] relative w-11/12 max-w-[1080px] mx-auto flex flex-row ">
-            <div class="flex flex-col max-w-[260px] justify-start mr-40">
+          <div class="pt-[360px] relative w-11/12 max-w-[1080px] mx-auto flex flex-col lg:flex-row ">
+            <div class="flex flex-col max-w-[260px] justify-start mr-10 md:mr-40">
 
               <img src="./images/logo-dark.svg" width="120px" class="" alt="">
 
@@ -1085,7 +1085,7 @@
             </div>
             <!-- column - 2 -->
       <div
-      class="flex flex-row space-y-4 md:space-y-0 md:flex-row md:space-x-4 justify-between"
+      class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-between"
     >
       <!-- sub column - 1 -->
       <div class="space-y-3">
@@ -1674,6 +1674,6 @@
 
           </div>
          </footer>
-    
+        </div>
 </body>
 </html>
